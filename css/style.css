@@ -13,16 +13,22 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 */
 
+}
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  
 }
 
 ul{
 	padding:0;
 	list-style:none;
+	display: flex;
+	float: right;
+	justify-content: space-between;
+	
 }
 
 img{
@@ -86,18 +92,93 @@ p{
 
 /* Header styling */
 
+.brand {
+	display: flex;
+}
+
+/* Header styling */
+
+header  {
+	background-color: #0B2343;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    margin: 0;
+	
+}
+
+   nav a {
+	   
+	   color: aliceblue;
+	   list-style-type: none;
+	   text-decoration: none;
+	   font-family: sans-serif;
+	   font-size: medium;
+	   font-weight: bolder;
+   }
+   nav ul {
+	   display: flex;
+	   
+   }
+a:hover {
+   background-color: #FF6B40;
+}
+a:active {
+   color: #00BAE4;
+}
+a:visited {
+   color: aliceblue;
+}
+
+/* Brand styling */
+.brand {
+	margin-top: 260px;
+	background-color: aliceblue;
+	padding: 100px;
+
+}
+
+.brand h3{
+	text-align: center;
+}
+.brand p  {
+	color: black;
+	text-align: center;
+	margin: 10px;
+	font-size: small;
+}
 
 
+.about img {
+	float: left;
+    margin-right: 5rem;
+	width: 450px;
+	border-radius: 10px;
+}
+.about p {
+	width: 100rem;
+    height: 30rem;
+	color: black;
+	
+	
+}
+.about a{
+	background-color: #ffcc05;
+	color: aliceblue;
+	text-align: center;
+	font-size: small;
+	text-decoration: none;
+	
 
+}
 
-
-
-
-
-
-
-
-
+.app-factory {
+	background-image: url("../img/map.jpg");
+	height: 400px;
+	background-repeat: no-repeat;
+	
+}
 
 
 
