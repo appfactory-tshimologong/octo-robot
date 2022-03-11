@@ -20,6 +20,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 header {
   display: block;
   margin-top: -2rem;
@@ -47,6 +48,76 @@ nav a {
   color: white;
   flex-basis: 30%;
 }
+header  {
+	
+	display: block;
+	display: flex;
+	position: fixed;
+	top: 0;
+    margin-bottom: 800px;
+	
+	
+}
+nav {
+	background-color: #0B2343;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	padding: 10px 0;
+	
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	flex-basis: 30%;
+}
+nav ul {
+	display: flex;
+	height: 6rem;
+	width: 100%;
+	float: right;
+	justify-content: space-between;
+	font-size: xx-large;
+	flex-basis: 50%;
+	
+}
+nav ul li {
+	margin-right: 0.5rem;
+	padding: 5px 2px;
+	list-style-type: none;
+}
+nav ul a:hover {
+ 
+background-color:#ffcc05 ;
+border-radius: 10px;
+color:#00BAE4;
+padding: 1rem;
+
+ } 
+a:active {
+	color:#00BAE4;
+ }
+ a:visited {
+	color: aliceblue;
+ }
+ /* Brand styling */
+.brand {
+	margin-top: 25rem;
+	background-color: aliceblue;
+	padding: 100px;
+    display: flex;
+}
+
+.brand h3{
+	text-align: center;
+}
+.brand p  {
+	color: black;
+	text-align: center;
+	margin: 10px;
+	font-size: small;
+
 
 /* Navbar container */
 .navbar {
