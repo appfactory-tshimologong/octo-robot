@@ -87,7 +87,7 @@ nav a {
 
 /* Navbar container */
 .navbar {
-  overflow: hidden;
+  /* overflow: hidden; */
 
   font-family: "Montserrat", sans-serif;
   border: 5px solid brown;
@@ -239,10 +239,7 @@ footer img {
   border: 5px solid white;
 }
 .copyright {
-  /* display: flex; */
-
   margin-left: 40rem;
-
   margin-top: -4rem;
   border: 5px solid white;
 }
@@ -271,6 +268,6 @@ footer img {
   background-color: #0b2343;
 } */
 
-.blue {
+/* .blue {
   background-color: #0b2343;
-}
+} */
