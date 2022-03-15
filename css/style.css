@@ -17,11 +17,14 @@ html {
   padding: 0;
   margin: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
   font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 
+=======
+>>>>>>> parent of 85b2497 (Update style.css)
 =======
 >>>>>>> parent of 85b2497 (Update style.css)
 }
@@ -112,6 +115,7 @@ display: flex;
   background-position: center;
   background-size: contain;
 
+<<<<<<< HEAD
   /*border: 5px solid yellow;*/
 
 }
@@ -503,6 +507,11 @@ z-index:9999; right:60px; width:360px;
 } */
 =======
 >>>>>>> parent of 85b2497 (Update style.css)
+=======
+  border: 5px solid yellow;
+}
+
+>>>>>>> parent of 85b2497 (Update style.css)
 .brand h3 {
   text-align: center;
 }
@@ -712,6 +721,7 @@ footer img {
 /* .blue {
   background-color: #0b2343;
 } */
+<<<<<<< HEAD
 
 .flame {
   background-color: #ff6b40;
@@ -749,5 +759,7 @@ button.readmore__toggle {
 }
 
  */
+=======
+>>>>>>> parent of 85b2497 (Update style.css)
 =======
 >>>>>>> parent of 85b2497 (Update style.css)
