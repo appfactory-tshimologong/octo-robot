@@ -16,11 +16,14 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
 
 
   font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 
+=======
+>>>>>>> parent of 85b2497 (Update style.css)
 }
 *,
 *:before,
@@ -112,10 +115,8 @@ display: flex;
   /*border: 5px solid yellow;*/
 
 }
-section {
-  padding: 10px 10px;
-}
 
+<<<<<<< HEAD
 
 
 /* The dropdown container */
@@ -500,6 +501,8 @@ i {
 .map-box2{
 z-index:9999; right:60px; width:360px;	
 } */
+=======
+>>>>>>> parent of 85b2497 (Update style.css)
 .brand h3 {
   text-align: center;
 }
@@ -615,10 +618,9 @@ aside ul {
   list-style: none;
 }
 .map {
-   border-radius: 5px solid #430b35; 
+  /* border: 5px solid pink; */
   margin: 2rem 5rem 1rem 5rem;
 }
- 
 
 h1 {
   color: #0b2343;
@@ -726,6 +728,7 @@ footer img {
 /* .blue {
   background-color: #0b2343;
 } */
+<<<<<<< HEAD
  
 .readmore__content {
   max-width: 45rem;
@@ -746,3 +749,5 @@ button.readmore__toggle {
 }
 
  */
+=======
+>>>>>>> parent of 85b2497 (Update style.css)
