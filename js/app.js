@@ -1,3 +1,4 @@
+
 "use strict";
 
 const continueReading = document.getElementById("btn_CTA");
@@ -17,4 +18,5 @@ let moreText =
 
     continueReading.parentElement.children['btn_CTA'].innerText = "Continue Reading";
   }
+
 });
