@@ -1,5 +1,5 @@
 var form = document.getElementsByTagName("form")[0];
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
   sendData();
 });
@@ -18,7 +18,7 @@ function sendData() {
   urlEncodedDataPairs.push(
     encodeURIComponent("send_to") +
       "=" +
-      encodeURIComponent(form.querySelector("[name='send_to']").value)
+      encodeURIComponent(form.querySelector("[name='email']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("email") +
@@ -74,7 +74,7 @@ function sendData() {
   urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
 
   // Define what happens on successful data submission
-  XHR.addEventListener("load", function(event) {
+  XHR.addEventListener("load", function (event) {
     if (XHR.readyState === XHR.DONE) {
       if (XHR.status === 200) {
         alert("Your order has been received! Check your email.");
@@ -85,7 +85,7 @@ function sendData() {
   });
 
   // Define what happens in case of error
-  XHR.addEventListener("error", function(event) {
+  XHR.addEventListener("error", function (event) {
     // This is normally a timeout or connection error.
     alert("Oops! Something went wrong.");
   });

@@ -1,6 +1,6 @@
 'use strict';
 
-Const clock = document.getElementById('clock');
+const clock = document.getElementById('clock');
 
 setInterval(() => {
   const currentTime = new Date().toLocaleTimeString([], { hour12: false });
@@ -10,7 +10,7 @@ setInterval(() => {
 
 const currentLocation = document.getElementById('currentLocation');
 const showIcon = document.getElementById('showIcon');
-const currentTemp = document.getElementById('curTemp');
+const currentTemp = document.getElementById('currentTemp');
 const feelsLike = document.getElementById('feelsLike');
 const description = document.getElementById('description');
 const hourlyForecast = document.getElementById('hourlyForecast');
@@ -25,7 +25,7 @@ const getLocation = () => {
 // store postion
 const storeLocation = (pos) => {
   const lat = pos.coords.latitude;
-  const long = pos.coords.longitude;
+  const lon = pos.coords.longitude;
   // console.log(`lat ${lat} \nlon ${lon}`);
   // eslint-disable-next-line no-undef
   const tempUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&appid=${API_KEY}`;
@@ -45,7 +45,7 @@ const fetchCurrentLocation = locationUrl => {
 
 // request data from OpenWeatherMap
 const fetchData = (url) => {
-  fetch(urls)
+  fetch(url)
     .then(res => res.json())
     .then(data => {
       handleWeather(data);
@@ -60,11 +60,11 @@ const handleWeather = (data) => {
   showIcon.alt = 'Current Weather Icon';
 
   const temp = `${convertToDeg(data.current.temp)}&deg;`;
-  const feeling = `Feels Like ${convertToDeg(data.current.feels_like)},`;
+  const feel = `Feels Like ${convertToDeg(data.current.feels_like)},`;
   const mainDesc = data.current.weather[0].main;
   const desc = data.current.weather[0].description;
   setInterval(() => {
-    currTemp.innerHTML = temp;
+    currentTemp.innerHTML = temp;
     feelsLike.innerHTML = feel;
     description.innerHTML = `${mainDesc} - ${desc}`;
   }, [1000]);

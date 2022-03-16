@@ -1,125 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alien Abduction Order Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/forms.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-	<link href="css/form.css" rel="stylesheet">
-</head>
+  <body>
+    <div class="wrapper">
+      <a href="../index.html">&lAarr; Go Back</a>
+      <section>
+        <h1>Alien Abduction Order Form</h1>
 
-<body>
-	<div class="wrapper">
-		<section>
+        <p>
+          Fill out the form below to place an order for an alien abduction by
+          one of our fine UFOs.
+        </p>
 
-			<h1>Alien Abduction Order Form</h1>
-			
-			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+        <form
+          action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES"
+          method="post"
+        >
+          <!-- <input type="hidden"name="send_to" value="barbara.engle@outlook.com"/> -->
 
-			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
-				
-				<input type="hidden" name="send_to" value="barbara.engle@outlook.com">
+          <fieldset>
+            <legend>Your contact information</legend>
 
-				<fieldset>
-					<legend>Your contact information</legend>
+            <label for="yourName">Your name</label>
+            <input type="text" id="yourname" name="yourname" />
 
-					<label for="yourName">Your name</label>
-					<input type="text" id="yourname" name="yourname">
+            <label for="phone">Phone number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(xxx) xxx xxxx"
+            />
 
-					<label for="phone">Phone number</label>
-					<input type="tel" id="phone" name="phone" placeholder="(xxx) xxx xxxx">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </fieldset>
 
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email">
-				</fieldset>
+          <fieldset>
+            <legend>About your abduction</legend>
 
-				<fieldset>
+            <label for="requestedDate">Requested date</label>
+            <input type="date" id="requesteddate" name="requesteddate" />
 
-					<legend>About your abduction </legend>
+            <label for="peopleNo"
+              >How many people would you like abducted?</label
+            >
+            <input
+              type="number"
+              id="peopleno"
+              min="1"
+              max="10"
+              name="peopleno"
+            />
 
-					<label for="requestedDate">Requested date</label>
-					<input type="date" id="requesteddate" name="requesteddate">
+            <label for="ufotype">What type of UFO do you prefer?</label>
+            <label>
+              <input type="radio" name="ufotype" value="classic" />
+              Classic oval UFO
+            </label>
 
-					<label for="peopleNo">How many people would you like abducted?</label>
-					<input type="number" id="peopleno" min="1" max="10" name="peopleno">
+            <label>
+              <input type="radio" name="ufotype" value="starwars" />
+              Star Wars-style Imperial cruiser
+            </label>
 
-					<label for="ufotype">What type of UFO do you prefer?</label>
-					<label>
-						<input type="radio" name="ufotype" value="classic">
-						Classic oval UFO
-					</label>
+            <label>
+              <input type="radio" name="ufotype" value="battlestar" />
+              Battlestar Galactica-style Viper
+            </label>
 
-					<label>
-						<input type="radio" name="ufotype" value="starwars">
-						Star Wars-style Imperial cruiser
-					</label>
+            <label>
+              <input type="radio" name="ufotype" value="borg" />
+              Borg-style cube
+            </label>
 
-					<label>
-						<input type="radio" name="ufotype" value="battlestar">
-						Battlestar Galactica-style Viper
-					</label>
+            <label for="experiencetype"
+              >What type of abduction experience do you want?</label
+            >
+            <select id="experiencetype" name="experiencetype">
+              <option selected>Select an experience.....</option>
+              <option value="tour">Tour of the solar system</option>
+              <option value="dinner">Alien dinner and discussion</option>
+              <option value="dance">Alien dance lessons</option>
+              <option value="whalewatching">Whale watching</option>
+            </select>
 
-					<label>
-						<input type="radio" name="ufotype" value="borg">
-						Borg-style cube
-					</label>
+            <label for="specialrequest">Special requests:</label>
+            <textarea id="specialrequest" name="specialrequest"></textarea>
 
-					<label for="experiencetype">What type of abduction experience do you want?</label>
-					<select id="experiencetype" name="experiencetype">
-						<option selected>Select an experience.....</option>
-						<option value="tour">Tour of the solar system</option>
-						<option value="dinner">Alien dinner and discussion</option>
-						<option value="dance">Alien dance lessons</option>
-						<option value="whalewatching">Whale watching</option>
-					</select>
+            <label>
+              <input
+                type="checkbox"
+                value="subscribe"
+                name="subscribe"
+                checked
+              />
+              Add me to your email list
+            </label>
+          </fieldset>
 
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
-					<label for="specialrequest">Special requests:</label>
-					<textarea id="specialrequest" name="specialrequest"></textarea>
+      <aside>
+        <h3>Our Location</h3>
 
-					<label>
-						<input type="checkbox" value="subscribe" name="subscribe" checked>
-						Add me to your email list
-					</label>
-	
+        <address>
+          <ul>
+            <li>Tshimologong Precinct</li>
+            <li>41 Juta Street</li>
+            <li>Braamfontein</li>
+            <li>Johannesburg</li>
+          </ul>
+        </address>
 
-				</fieldset>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0643656546868!2d28.029705815351612!3d-26.19458438344202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6a6a1df1%3A0xc45fc4ca472e6a2f!2s41%20Juta%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202000!5e0!3m2!1sen!2sza!4v1642593471384!5m2!1sen!2sza"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </aside>
+    </div>
 
-				<button type="submit">Submit</button>
-				
-				
-			</form>
-
-		</section>
-
-		<aside>
-		
-			<h3>Our Location</h3>
-		
-			<address>
-			<ul>
-				<li>Tshimologong Precinct </li>
-				<li>41 Juta Street </li>
-				<li>Braamfontein </li>
-				<li>Johannesburg</li>
-			</ul>
-			</address>
-
-			<iframe 
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0643656546868!2d28.029705815351612!3d-26.19458438344202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6a6a1df1%3A0xc45fc4ca472e6a2f!2s41%20Juta%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202000!5e0!3m2!1sen!2sza!4v1642593471384!5m2!1sen!2sza" 
-				width="400" 
-				height="300" 
-				style="border:0;" 
-				allowfullscreen="" 
-				loading="lazy">
-			</iframe>
-		
-		</aside>
-	</div>
-
-	<script src="js/forms.js"></script>
-</body>
-
+    <script src="js/forms.js"></script>
+  </body>
 </html>
