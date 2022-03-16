@@ -152,3 +152,17 @@ footer {
     padding: 15px;
     display: inline-block;
 }
+.back_btn{
+    background-color: #ffcc05;
+     margin-left: 50rem;
+     padding: 1rem 1rem;
+     border-radius: 0.5rem;
+    
+}
+
+.btn_text{
+    color:#0B2343;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
