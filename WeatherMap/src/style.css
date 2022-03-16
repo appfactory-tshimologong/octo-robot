@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
 @font-face {
     font-family: 'digital';
@@ -113,3 +114,18 @@ nav h1{
 .hourly-container p:last-child{
     margin: 0 0 0.5rem 0.5rem;
 }
+.back_btn{
+    background-color: #ffcc05;
+     margin-left: 50rem;
+     padding: 1rem 1rem;
+     border-radius: 0.5rem;
+    
+}
+
+.btn_text{
+    color:#0B2343;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+

@@ -1,3 +1,4 @@
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -69,7 +70,7 @@ img {vertical-align: middle;}
 }
 
 .mySlides img{
-    width: 700px;
+    width: auto;
     height: 500px;
 
 }
