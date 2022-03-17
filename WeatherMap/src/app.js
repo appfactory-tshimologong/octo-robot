@@ -1,3 +1,4 @@
+
 'use strict';
 
 const clock = document.getElementById('clock');

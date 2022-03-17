@@ -1,3 +1,4 @@
+
 var form = document.getElementsByTagName("form")[0];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -99,3 +100,4 @@ function sendData() {
   // Finally, send our data.
   XHR.send(urlEncodedData);
 }
+

@@ -1,3 +1,4 @@
+
 /*Colour Palette
 /---------------
 #0B2343 - Oxford Blue
@@ -16,7 +17,9 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
   background-color: #ffffff;
+
 }
 *,
 *:before,
@@ -63,7 +66,10 @@ nav a {
   text-decoration: none;
   color: white;
   flex-basis: 30%;
+  
 }
+
+
 
 /* Navbar container */
 .navbar {
@@ -86,6 +92,7 @@ nav a {
   padding: 0rem;
   text-decoration: none;
   margin-top: 1rem;
+
   /* width: 100%; */
   font-size: large;
   /* margin-right: -2rem; */
@@ -95,18 +102,29 @@ nav a {
   inline-size: 15rem;
   margin-left: -2rem;
 }
+
+  width: 100%;
+  font-size: large;
+  inline-size: 15rem;
+  margin-right: -2rem;
+}
+
 /* The dropdown container */
 .dropdown-teams,
 .dropdown {
   float: left;
   overflow: hidden;
+
   /* margin-left: 1rem; */
+
 }
 
 /* Dropdown button */
 .dropdown-teams .dropbtn-teams,
 .dropdown .dropbtn {
+
   font-size: large;
+
   border: none;
   outline: none;
   color: white;
@@ -122,6 +140,10 @@ nav a {
 .navbar .about:hover,
 .dropdown:hover .dropbtn {
   color: #ffcc05;
+
+  border-radius: 1rem;
+ 
+
 }
 
 /* Dropdown content (hidden by default) */
@@ -147,12 +169,38 @@ nav a {
   text-align: left;
 }
 
+
 /************Teams Drops Down Hovering********/
+
+/***************************
+Teams Drops Down
+***************************/
+/* The dropdown container */
+.dropdown-teams {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown-teams .dropbtn-teams {
+  font-size: large;;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin-left :2.4rem; /* Important for vertical align on mobile phones */
+}
+
 
 /* Add a Sunglow background color to navbar links on hover */
 .dropdown-teams:hover .dropbtn-teams {
   color: #ffcc05;
+
   /* border-radius: 1rem; */
+
+
 }
 
 .dropdown-teams:hover .dropdown-content-teams {
@@ -172,6 +220,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
 
   /* border: 5px solid yellow; */
 }
@@ -195,6 +244,7 @@ section {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .card {
@@ -210,8 +260,10 @@ section {
 }
 .card:hover {
   transform: scale(1.1);
+
   background-color: rgba(128, 128, 128, 0.158);
 }
+
 
 .box {
   width: 40%;
@@ -234,9 +286,11 @@ section {
   font-size: medium;
 }
 
+
 /*******************************
          ABOUT SECTION
 ********************************/
+
 .about {
   display: flex;
   margin-top: 10rem;
@@ -296,8 +350,10 @@ aside ul {
   list-style: none;
 }
 address li {
+
   margin-top: 1rem;
   font-size: x-large;
+
 }
 
 .map {
@@ -364,6 +420,7 @@ footer img {
 }
 
 footer ul {
+
   display: flex;
   color: white;
   margin-left: 44rem;
@@ -380,7 +437,9 @@ footer li {
 
 .sunnyColor {
   background-color: #ffcd05;
+
 }
+
 
 /* 
 .colour {
@@ -388,6 +447,7 @@ footer li {
   width: 160px;
   border: none;
 }
+
 
 }
 .yellow {
@@ -408,5 +468,7 @@ footer li {
 
 .blue {
   background-color: #0b2343;
+
   color: #ddd;
 }
+
