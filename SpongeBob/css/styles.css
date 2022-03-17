@@ -16,120 +16,120 @@ cinnabar: #DC4731ff;
 /* Global Styles
 --------------------------------------*/
 
-html{
-    box-sizing:border-box;
+html {
+  box-sizing: border-box;
 }
-*,*:before,*:after {
-    box-sizing:inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    color: #343434;
-    margin: 0;
-    padding:0;
-    font-family:  'montserrat', sans-serif;
-    line-height: 1.5;
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  line-height: 1.5;
 }
-.content-wrapper{
-    max-width: 800px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
+.content-wrapper {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
 }
-image{
-    width:300px;
+image {
+  width: 300px;
 }
 a {
-    color:#355691ff;
+  color: #355691ff;
 }
-a:hover{
-    text-decoration:nothing;
-}
-
-h1{
-   font-size:70px; 
-
+a:hover {
+  text-decoration: nothing;
 }
 
-h2{
-    font-size:60px;
+h1 {
+  font-size: 70px;
 }
-h1,h2 {
-    font-family:'Pacifico', cursive;
-    font-weight: 400;
-    margin:0;
+
+h2 {
+  font-size: 60px;
+}
+h1,
+h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  margin: 0;
 }
 
 .divider > section {
-    border-bottom: 1px dashed #343434;
-    padding: 25px 0;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
 }
 
-.divider > section:last-of-type{
-    border-style:none;
+.divider > section:last-of-type {
+  border-style: none;
 }
 
 /* Profile
 --------------------------------------*/
 
-header{
-    color: #355691ff;
-    text-align: center;
-    background-color:#F3E47Aff ;
-    background-image: url("../images/SpongeBob_stock_art.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 20%;
+header {
+  color: #355691ff;
+  text-align: center;
+  background-color: #f3e47aff;
+  background-image: url("../images/SpongeBob_stock_art.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20%;
 }
 
-header h2{
-    font-size:40px;
-    color:#DC4731ff;
-    margin-top:20px; 
+header h2 {
+  font-size: 40px;
+  color: #dc4731ff;
+  margin-top: 20px;
 }
 
 header p {
-    font-size:20px;
-    margin-top:30px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 /* Projects
 --------------------------------------*/
 .projects {
-    background: #c6dabfff;
+  background: #c6dabfff;
 }
 
 .projects h2 {
-    color: #355691ff;
+  color: #355691ff;
 }
-.project-item{
-    overflow:hidden;
-
+.project-item {
+  overflow: hidden;
 }
-.project-item img{
-    float:left;
-    margin-right: 20px;
-}
-
-.project-item h3{
-    margin-top:0;
-    color: #355691ff;
+.project-item img {
+  float: left;
+  margin-right: 20px;
 }
 
+.project-item h3 {
+  margin-top: 0;
+  color: #355691ff;
+}
 
 /* Work Experience
 --------------------------------------*/
 .work-experience {
-    color:#F3E47Aff;
-    background: #413f54ff;
+  color: #f3e47aff;
+  background: #413f54ff;
 }
 
 .work-experience h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 .job-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /* Education
 --------------------------------------*/
@@ -137,21 +137,40 @@ header p {
 /* Contact Info
 --------------------------------------*/
 footer {
-    background:#F3E47Aff ;
-    color:#f7fff7;
-    text-align:center;
+  background: #f3e47aff;
+  color: #f7fff7;
+  text-align: center;
 }
 
-.contact-list{
-    list-style-type:none;
-    padding:0;
-    display: flex;
-    justify-content: center;
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-list a{
-    padding: 15px;
-    display: inline-block;
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+.back_btn {
+  /* background-color: #0b2343; */
+
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn_text {
+  color: #0b2343;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn_text:hover {
+  color: #ffcc05;
 }
 .back_btn{
     background-color: #ffcc05;

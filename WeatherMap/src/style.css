@@ -1,118 +1,135 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+
 @font-face {
-    font-family: 'digital';
-    src: url('./assets/fonts/digital.ttf');
+  font-family: "digital";
+  src: url("./assets/fonts/digital.ttf");
 }
 
-*{
-    font-family: Montserrat, sans;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: Montserrat, sans;
+  margin: 0;
+  padding: 0;
 }
-nav{
-    font-size: 2.5rem;
-    padding: 0.8rem 5%;
-    background-color: #0c2343;
-    color: #fff;
-    display: block;
+nav {
+  font-size: 2.5rem;
+  padding: 0.8rem 5%;
+  background-color: #0c2343;
+  color: #fff;
+  display: block;
 }
-nav h1{
-    display: inline;
+nav h1 {
+  display: inline;
 }
-.clock{
-    float: right;
-    letter-spacing: 0.2ch;
-    
+.clock {
+  float: right;
+  letter-spacing: 0.2ch;
 }
-.current{
-    padding: 2rem 5%;
-    
+.current {
+  padding: 2rem 5%;
 }
 .current-location {
-    display: flex;
-    border-bottom: 1px solid #0c2343;
-    margin-bottom: 0.8rem;
-} 
-.current-location div{
-    display: flex;
+  display: flex;
+  border-bottom: 1px solid #0c2343;
+  margin-bottom: 0.8rem;
 }
-.current-location i{
-    border-left: 1px solid red;
-    padding-left: 2rem;
-} 
+.current-location div {
+  display: flex;
+}
+.current-location i {
+  border-left: 1px solid red;
+  padding-left: 2rem;
+}
 
-.current-location i, 
-.current-location .location-name{
-    font-size: 2rem;
-    margin-right: 0.8rem;
-    height: max-content;
+.current-location i,
+.current-location .location-name {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  height: max-content;
 }
-.pin-icon{
-    width: 40px;
-    height: 42px;
+.pin-icon {
+  width: 40px;
+  height: 42px;
 }
-.temp{
-    display: block;
-    padding-right: 1rem;
+.temp {
+  display: block;
+  padding-right: 1rem;
 }
-.temp h2{
-    font-size: 2rem;
+.temp h2 {
+  font-size: 2rem;
 }
-.current-icon{
-    width: 50px;
-    height: 50px;
-    border: none;
+.current-icon {
+  width: 50px;
+  height: 50px;
+  border: none;
 }
 /* ______________ */
-.desc{
-    font-size: 1.2rem;
-    display: flex;
-    font-weight: 500;
+.desc {
+  font-size: 1.2rem;
+  display: flex;
+  font-weight: 500;
 }
-.feels-like{
-    margin-right: 1rem;
+.feels-like {
+  margin-right: 1rem;
 }
-.description{
-    text-transform: capitalize;
+.description {
+  text-transform: capitalize;
 }
-.hourly-forecast{
-    display: flex;
-    margin: 2rem 0;
+.hourly-forecast {
+  display: flex;
+  margin: 2rem 0;
 }
-.hourly-container{
-    width: 18rem;
-    margin-right: 1rem;
-    background-color: #f8f8f8;
-    border-radius: 0.5rem;
-    box-shadow: 3px 3px 10px 1px rgba(12,35,67,0.3);
-    -webkit-box-shadow: 3px 3px 10px 1px rgba(12,35,67,0.3);
-    -moz-box-shadow: 3px 3px 10px 1px rgba(12,35,67,0.3);
+.hourly-container {
+  width: 18rem;
+  margin-right: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 1px rgba(12, 35, 67, 0.3);
+  -webkit-box-shadow: 3px 3px 10px 1px rgba(12, 35, 67, 0.3);
+  -moz-box-shadow: 3px 3px 10px 1px rgba(12, 35, 67, 0.3);
 }
-.hourly-container:last-child{
-    margin-right: 0;
+.hourly-container:last-child {
+  margin-right: 0;
 }
-.hourly-container h2{
-    background-color: #0c2343;
-    padding: 0.2rem 0.5rem;
-    color: #fff;
-    border-radius: 0.5rem 0.5rem 0 0;
-    font-weight: 400;
+.hourly-container h2 {
+  background-color: #0c2343;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: 400;
 }
-.hourly-temp-icon{
-    display: flex;
-    margin: 0.3rem 0.5rem;
+.hourly-temp-icon {
+  display: flex;
+  margin: 0.3rem 0.5rem;
 }
 .hourly-temp-icon img {
-    height: 2.2rem;
-    width: 2.2rem;
+  height: 2.2rem;
+  width: 2.2rem;
 }
-.hourly-temp-icon p{
-    font-size: 1.5rem;
-    font-weight: 600;
+.hourly-temp-icon p {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-.hourly-container p:last-child{
-    margin: 0 0 0.5rem 0.5rem;
+.hourly-container p:last-child {
+  margin: 0 0 0.5rem 0.5rem;
+}
+.back_btn {
+  /* background-color: #0b2343; */
+
+  margin-left: 40rem;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn_text {
+  color: #0b2343;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn_text:hover {
+  color: #ffcc05;
 }
 .back_btn{
     background-color: #ffcc05;
